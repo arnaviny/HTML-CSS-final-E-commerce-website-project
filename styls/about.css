@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  .header {
+    color: #000000;
+    text-align: center;
+    padding: 1.5em 0;
+  }
+  
+  .about-section, .team-section, .about-heder{
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border: solid rgba(169, 169, 169, 0.512);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffffd1;
+    margin-bottom: 20px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+  }
+  .about-heder{
+    display: flex;
+    justify-content: center; /* מרכז את הפריטים בתוך ה-nav-bar */
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px; /* פינות מעוגלות */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הצללה */
+    width: fit-content; /* מתאים את הרוחב לתוכן */
+    margin: 0 auto; /* ממרכז את ה-nav-bar */
+  }
+
+  .about-heder .Our-Story .about-txt{
+    border: 2px solid #333; /* מסגרת בצבע כהה */
+    padding: 10px; /* ריווח פנימי לטקסט */
+    border-radius: 5px; /* פינות מעוגלות */
+    display: inline-block; /* גורם למסגרת להתאים לגודל התוכן */
+  }
+
+
+  .about-section .content, .team-section .team-grid {
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .team-member img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .team-member h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  

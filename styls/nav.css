@@ -1,0 +1,97 @@
+.nev-bar {
+    display: flex;
+    justify-content: center; /* מרכז את הפריטים בתוך ה-nav-bar */
+    align-items: center;
+    background-color: #f0f0f0d9; /* צבע רקע */
+    padding: 15px;
+    border-radius: 15px; /* פינות מעוגלות */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הצללה */
+    width: fit-content; /* מתאים את הרוחב לתוכן */
+    margin: 0 auto; /* ממרכז את ה-nav-bar */
+    position: sticky;
+    top: 0; /* מיקום בראש הדף */
+    transition: 0.3s ease;
+    z-index: 1000; /* מבטיח שהניווט יישאר מעל שאר התוכן */
+
+  }
+  
+  
+.nev-bar > div {
+  display: flex;
+  flex-direction: row; /* פריסה אנכית של האייקון והטקסט */
+  align-items: center; /* מרכז את הפריטים */
+  gap: 1em; /* מרווח בין האייקון לטקסט */
+  padding: 0;
+  border-radius: 10px; /* פינות מעוגלות לכל פריט */
+  transition: background-color 0.3s, transform 0.3s; /* טרנזישן */
+  cursor: pointer; /* שינוי צורת הסמן */
+}
+
+.nev-bar a {
+  display: flex;
+  flex-direction: column; /* פריסה אנכית של האייקון והטקסט */
+  align-items: center; /* ממרכז את הטקסט והאייקון */
+  text-decoration: none; /* הסרת קו תחתון */
+  color: inherit; /* שמירה על צבע הטקסט */
+  width: 100%; /* לוודא שהקישור תופס את כל ה-div */
+}
+
+.nev-bar img {
+  width: 5vw; /* גודל רספונסיבי לפי רוחב המסך */
+  height: auto;
+  transition: transform 0.3s; /* טרנזישן לאייקון */
+}
+
+.nev-bar h1 {
+  font-size: 2vw; /* גודל רספונסיבי לפי רוחב המסך */
+  margin: 0;
+  transition: color 0.3s; /* טרנזישן לטקסט */
+}
+
+.nav-svg{
+  transition: transform 0.3s ease;
+}
+
+.nev-bar:hover{
+  background-color: rgba(255, 255, 255, 0.867);
+  box-shadow: 0 4px 14px 2px rgb(0 0 0);
+  transition: 0.3s;
+}
+
+.nav-svg:hover{
+  transform: scale(1.2);
+}
+
+/* מגבלת גודל למחשבים */
+@media (min-width: 1024px) {
+  .nev-bar img {
+    width: 40px; /* גודל קבוע למחשבים */
+    height: 40px;
+  }
+  
+  .nev-bar h1 {
+    font-size: 1rem; /* גודל קבוע לטקסט במחשבים */
+  }
+}
+
+/* עיצוב לטאבלטים */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .nev-bar img {
+    width: 7vw; /* מתאים את הגודל לטאבלטים */
+  }
+
+  .nev-bar h1 {
+    font-size: 1.5vw; /* מתאים את גודל הטקסט לטאבלטים */
+  }
+}
+
+/* עיצוב לטלפונים */
+@media (max-width: 768px) {
+  .nev-bar img {
+    width: 10vw; /* מתאים את הגודל לטלפונים */
+  }
+
+  .nev-bar h1 {
+    font-size: 2.5vw; /* מתאים את גודל הטקסט לטלפונים */
+  }
+}

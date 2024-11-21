@@ -1,0 +1,66 @@
+.footer-div{
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff00;
+  align-items: center;
+  width: 100%;
+
+}
+
+.social-media {
+  display: flex;
+  justify-content: center; /* מרכז את האייקונים */
+  align-items: center;
+  gap: 20px; /* רווח בין האייקונים */
+  padding: 15px 0; /* ריווח פנימי */
+  border-top: 1px solid #cccccc00; /* קו עליון עדין */
+  margin-bottom: 0; /* דוחף את ה-footer לתחתית */
+}
+
+.social-media .svg a img {
+  width: 30px; /* גודל האייקונים */
+  height: auto;
+  transition: transform 0.3s ease; /* אנימציה לחיצה */
+}
+
+.social-media .svg a img:hover {
+  transform: scale(1.2); /* הגדלה קלה בעת רחף */
+}
+
+footer {
+  margin-top: auto; /* דוחף את ה-footer לתחתית */
+  position: relative;
+  
+
+}
+
+.facebook{
+  scale: 120%;
+}
+  
+  /* מגבלת גודל למחשבים */
+  @media (min-width: 1024px) {
+    .social-media .svg img {
+      width: 40px; /* גודל קבוע למחשבים */
+      height: 40px;
+    }
+  }
+  
+  /* עיצוב לטאבלטים */
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .social-media .svg img {
+      width: 7vw; /* מתאים את הגודל לטאבלטים */
+    }
+  }
+  
+  /* עיצוב לטלפונים */
+  @media (max-width: 768px) {
+    .social-media {
+      padding: 15px; /* התאמת הריווח למסכים קטנים */
+    }
+    
+    .social-media .svg img {
+      width: 10vw; /* מתאים את הגודל לטלפונים */
+    }
+  }
+  
