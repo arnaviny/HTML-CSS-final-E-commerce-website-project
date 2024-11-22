@@ -154,7 +154,7 @@ body {
   
   /* זהב לבן */
   #white-gold:hover + .option-label {
-    background-color: #fffaf0;
+    background-color: #ffaeae;
     color: black;
     border-color: #ccc;
   }
@@ -176,10 +176,29 @@ body {
   
   /* זהב לבן */
   #white-gold:checked + .option-label {
-    background-color: #fffaf0;
+    background-color: #ffaeae;
     color: black;
     border-color: #ccc;
   }
+
+  /* Silver */
+#silver:checked ~ .product-gallery {
+    background-color: silver;
+    box-shadow: 0 4px 8px gray;
+}
+
+/* Gold */
+#gold:checked ~ .product-gallery {
+    background-color: gold;
+    box-shadow: 0 4px 8px goldenrod;
+}
+
+/* Red Gold */
+#white-gold:checked ~ .product-gallery {
+    background-color: #ffaeae;
+    box-shadow: 0 4px 8px #cc7a7a;
+}
+
 
 @media (max-width: 768px) {
     .product-container {
