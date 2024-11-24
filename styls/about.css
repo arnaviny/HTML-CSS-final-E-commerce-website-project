@@ -30,20 +30,20 @@ body {
   }
   .about-heder{
     display: flex;
-    justify-content: center; /* מרכז את הפריטים בתוך ה-nav-bar */
+    justify-content: center; 
     align-items: center;
     padding: 15px;
-    border-radius: 15px; /* פינות מעוגלות */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הצללה */
-    width: fit-content; /* מתאים את הרוחב לתוכן */
-    margin: 0 auto; /* ממרכז את ה-nav-bar */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: fit-content;
+    margin: 0 auto; 
   }
 
   .about-heder .Our-Story .about-txt{
-    border: 2px solid #333; /* מסגרת בצבע כהה */
-    padding: 10px; /* ריווח פנימי לטקסט */
-    border-radius: 5px; /* פינות מעוגלות */
-    display: inline-block; /* גורם למסגרת להתאים לגודל התוכן */
+    border: 2px solid #333; 
+    padding: 10px; 
+    border-radius: 5px; 
+    display: inline-block; 
   }
 
 

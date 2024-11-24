@@ -21,16 +21,16 @@ body {
     opacity: 70%;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* מתאים את הווידאו לגודל המסך */
-    z-index: -2; /* מבטיח שהווידאו יהיה מאחורי התוכן */
+    object-fit: cover;
+    z-index: -2;
   }
   
   .overlay-image {
-    position: fixed; /* נשאר במיקום קבוע בזמן הגלילה */
+    position: fixed; 
     top: 0;
     left: 0;
-    width: 100%; /* ממלא את כל רוחב המסך */
-    z-index: -1; /* מבטיח שהתמונה תהיה מעל הרקע אך מתחת לגריד */
+    width: 100%;
+    z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;

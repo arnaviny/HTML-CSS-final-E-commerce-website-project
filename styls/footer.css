@@ -9,26 +9,26 @@
 
 .social-media {
   display: flex;
-  justify-content: center; /* מרכז את האייקונים */
+  justify-content: center; 
   align-items: center;
-  gap: 20px; /* רווח בין האייקונים */
-  padding: 15px 0; /* ריווח פנימי */
-  border-top: 1px solid #cccccc00; /* קו עליון עדין */
-  margin-bottom: 0; /* דוחף את ה-footer לתחתית */
+  gap: 20px; 
+  padding: 15px 0; 
+  border-top: 1px solid #cccccc00; 
+  margin-bottom: 0; 
 }
 
 .social-media .svg a img {
-  width: 30px; /* גודל האייקונים */
+  width: 30px; 
   height: auto;
-  transition: transform 0.3s ease; /* אנימציה לחיצה */
+  transition: transform 0.3s ease; 
 }
 
 .social-media .svg a img:hover {
-  transform: scale(1.2); /* הגדלה קלה בעת רחף */
+  transform: scale(1.2); 
 }
 
 footer {
-  margin-top: auto; /* דוחף את ה-footer לתחתית */
+  margin-top: auto; 
   position: relative;
   
 
@@ -38,29 +38,29 @@ footer {
   scale: 120%;
 }
   
-  /* מגבלת גודל למחשבים */
+  
   @media (min-width: 1024px) {
     .social-media .svg img {
-      width: 40px; /* גודל קבוע למחשבים */
+      width: 40px; 
       height: 40px;
     }
   }
   
-  /* עיצוב לטאבלטים */
+
   @media (max-width: 1024px) and (min-width: 768px) {
     .social-media .svg img {
-      width: 7vw; /* מתאים את הגודל לטאבלטים */
+      width: 7vw; 
     }
   }
   
-  /* עיצוב לטלפונים */
+
   @media (max-width: 768px) {
     .social-media {
-      padding: 15px; /* התאמת הריווח למסכים קטנים */
+      padding: 15px; 
     }
     
     .social-media .svg img {
-      width: 10vw; /* מתאים את הגודל לטלפונים */
+      width: 10vw; 
     }
   }
   
